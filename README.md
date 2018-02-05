@@ -2,7 +2,7 @@ Autoform File
 =============
 
 ### Description
-Upload and manage files with autoForm via [`ostrio:files`](https://github.com/VeliovGroup/Meteor-Files). This package was ported from `yogiben:autoform-file` to use with [`ostrio:files`](https://github.com/VeliovGroup/Meteor-Files) instead of the already deprecated CollectionFS.
+Upload and manage files with autoForm via [`ostrio:files`](https://github.com/VeliovGroup/Meteor-Files). This package was forked from [`ostrio:files`](https://github.com/VeliovGroup/Meteor-Files) in order to make it work with mozfet:
 
 ### Quick Start:
 

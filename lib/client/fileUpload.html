@@ -11,8 +11,8 @@
           {{> uploadFileDemo}}
         {{/if}}
       </div>
-      <a data-reset-file href="#" style="display:none">Reset</a>
-      <a data-remove-file href="#">Remove</a>
+      <div data-reset-file class="btn" style="display:none">Reset</div>
+      <div data-remove-file class="btn">Remove</div>
     {{/if}}
   {{else}}
     {{#if uploadTemplate}}
@@ -24,7 +24,16 @@
         &nbsp;
         <span class="progress">{{progress.get}}%</span>
       {{else}}
-        <input data-files-collection-upload class="form-control af-file-upload-capture" type="file" />
+        <div class="file-field input-field">
+          <div class="btn">
+            <span>File</span>
+            <!-- <input type="file" value="{{this.value}}" {{atts}}/> -->
+            <input data-files-collection-upload class="form-control af-file-upload-capture" type="file" />
+          </div>
+          <div class="file-path-wrapper">
+            <input class="file-path" type="text">
+          </div>
+        </div>
       {{/with}}
     {{/if}}
   {{/with}}
