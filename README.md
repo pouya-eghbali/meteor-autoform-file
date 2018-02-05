@@ -1,14 +1,29 @@
-Autoform File
-=============
+Autoform MaterializeCSS File
+============================
 
-### Description
-Upload and manage files with autoForm via [`ostrio:files`](https://github.com/VeliovGroup/Meteor-Files). This package was forked from [`ostrio:files`](https://github.com/VeliovGroup/Meteor-Files) in order to make it work with mozfet:
+## Description
+Upload and manage files with autoForm via [`ostrio:files`](https://github.com/VeliovGroup/Meteor-Files). This package was forked from [`ostrio:autoform-files`](https://github.com/VeliovGroup/meteor-autoform-file) in order to make it work with mozfet:autoform-materialize.
+
+> **Thank You** This suite of packages is maintained by [ExpertBox.com](https://www.ExpertBox.com/home) as a thank you to the Open Source community.
+
+## This package is part of a suite ##
+- [mozfet:meteor-autoform-materialize](https://github.com/mozfet/meteor-autoform-materialize)
+- [mozfet:meteor-autoform-materialize-modals](https://github.com/mozfet/meteor-autoform-materialize-modals)
+- [mozfet:meteor-autoform-nouislider](https://github.com/mozfet/meteor-autoform-nouislider)
+- [mozfet:meteor-autoform-medium](https://github.com/mozfet/meteor-autoform-medium)
+- [mozfet:meteor-autoform-file](https://github.com/mozfet/meteor-autoform-file)
+- [mozfet:materialize-icons](https://github.com/mozfet/meteor-materialize-icons)
+- [mozfet:meteor-autoform-materialize-playground](https://github.com/mozfet/meteor-autoform-materialize-playground)
+
+## Demo, Examples, Detailed Usage and Smoke Testing ##
+
+Have a look at the [playground](https://github.com/mozfet/meteor-autoform-materialize-playground) for demo, examples, detailed usage and smoke testing.
 
 ### Quick Start:
 
- - Install `meteor add ostrio:autoform-files`
  - Install `meteor add ostrio:files`, *if not yet installed*
- - Add this config to `simpl-schema` NPM package (depending of the language that you are using):
+ - Install `meteor add mozfet:autoform-materialize-files`
+  - Add this config to `simpl-schema` NPM package (depending of the language that you are using):
 ```javascript
 SimpleSchema.setDefaultMessages({
   initialLanguage: 'en',
