@@ -6,12 +6,21 @@
     {{else}}
       <div>
         {{#if isImage}}
-          {{> uploadImageDemo}}
+          {{> uploadImagePreview}}
         {{else}}
-          {{> uploadFileDemo}}
+          {{#if isAudio}}
+            {{> uploadAudioPreview}}
+          {{else}}
+            {{#if isVideo}}
+              {{> uploadVideoPreview}}
+            {{else}}
+              {{> uploadFilePreview}}
+            {{/if}}
+          {{/if}}
         {{/if}}
+
       </div>
-      <div data-reset-file class="btn" style="display:none">Reset</div>
+      <!-- <div data-reset-file class="btn" style="display:none">Reset</div> -->
       <div data-remove-file class="btn">Remove</div>
     {{/if}}
   {{else}}
@@ -27,7 +36,6 @@
         <div class="file-field input-field">
           <div class="btn">
             <span>File</span>
-            <!-- <input type="file" value="{{this.value}}" {{atts}}/> -->
             <input data-files-collection-upload class="form-control af-file-upload-capture" type="file" />
           </div>
           <div class="file-path-wrapper">

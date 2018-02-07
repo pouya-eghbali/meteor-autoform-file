@@ -2,7 +2,7 @@ Package.describe({
   name: 'mozfet:autoform-materialize-files',
   summary: 'File upload for mozfet:autoform-materialize using ostrio:files.',
   description: 'File upload for mozfet:autoform-materialize using ostrio:files.',
-  version: '2.0.6',
+  version: '2.0.7',
   git: 'https://github.com/mozfet/meteor-autoform-file.git'
 });
 
@@ -24,7 +24,9 @@ Package.onUse(function(api) {
     'lib/client/autoform.js',
     'lib/client/fileUpload.html',
     'lib/client/fileUpload.js',
-    'lib/client/uploadImageDemo.html',
-    'lib/client/uploadFileDemo.html'
+    'lib/client/uploadImagePreview.html',
+    'lib/client/uploadAudioPreview.html',
+    'lib/client/uploadVideoPreview.html',
+    'lib/client/uploadFilePreview.html'
   ], 'client');
 });

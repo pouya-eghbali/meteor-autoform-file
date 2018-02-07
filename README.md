@@ -79,20 +79,18 @@ Schemas.Posts = new SimpleSchema({
   picture: {
     type: String,
     autoform: {
-      afFieldInput: {
-        type: 'fileUpload',
-        collection: 'Images',
-        uploadTemplate: 'uploadField', // <- Optional
-        previewTemplate: 'uploadPreview', // <- Optional
-        insertConfig: { // <- Optional, .insert() method options, see: https://github.com/VeliovGroup/Meteor-Files/wiki/Insert-(Upload)
-          meta: {},
-          isBase64: false,
-          transport: 'ddp',
-          streams: 'dynamic',
-          chunkSize: 'dynamic',
-          allowWebWorkers: true
-        }
-      }
+      type: 'fileUpload',
+      collection: 'Images',
+      uploadTemplate: 'uploadField', // <- Optional
+      previewTemplate: 'uploadPreview', // <- Optional
+      insertConfig: { // <- Optional, .insert() method options, see: https://github.com/VeliovGroup/Meteor-Files/wiki/Insert-(Upload)
+        meta: {},
+        isBase64: false,
+        transport: 'ddp',
+        streams: 'dynamic',
+        chunkSize: 'dynamic',
+        allowWebWorkers: true
+      }      
     }
   }
 });
