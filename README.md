@@ -59,13 +59,6 @@ if (Meteor.isServer) {
   });
 }
 ```
-__Note:__ If you don't use Mongo Collection instances (`dburles:mongo-collection-instances`), then the `Images` variable must be attached to *Global* scope. And has same name (*case-sensitive*) as `collectionName` option passed into `FilesCollection#insert({collectionName: 'Images'})` method, `Images` in our case.
-
-To start using `dburles:mongo-collection-instances` simply install it:
-```shell
-meteor add dburles:mongo-collection-instances
-```
-
 
  - Define your schema and set the `autoform` property like in the example below
 ```javascript

@@ -2,7 +2,7 @@ Package.describe({
   name: 'mozfet:autoform-materialize-files',
   summary: 'File upload for mozfet:autoform-materialize using ostrio:files.',
   description: 'File upload for mozfet:autoform-materialize using ostrio:files.',
-  version: '2.0.7',
+  version: '2.1.0',
   git: 'https://github.com/mozfet/meteor-autoform-file.git'
 });
 
@@ -17,7 +17,8 @@ Package.onUse(function(api) {
     'reactive-var',
     'templating',
     'aldeed:autoform@6.2.0',
-    'ostrio:files@1.9.0'
+    'ostrio:files@1.9.0',
+    'dburles:mongo-collection-instances@0.3.5'
   ]);
 
   api.addFiles([
