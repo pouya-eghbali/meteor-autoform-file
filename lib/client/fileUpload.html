@@ -35,11 +35,11 @@
       {{else}}
         <div class="file-field input-field">
           <div class="btn">
-            <span>File</span>
+            <span>{{getButtonText}}</span>
             <input data-files-collection-upload class="form-control af-file-upload-capture" type="file" />
           </div>
           <div class="file-path-wrapper">
-            <input class="file-path" type="text">
+            <input class="file-path" type="text" placeholder="{{afFieldLabelText name=this.name}}">
           </div>
         </div>
       {{/with}}
