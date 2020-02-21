@@ -23,15 +23,15 @@
       <!-- <div data-reset-file class="btn" style="display:none">Reset</div> -->
       <div data-remove-file class="btn">Remove</div>
     {{/if}}
-  {{else}}
-    {{#if uploadTemplate}}
-      {{>Template.dynamic template=uploadTemplate data=currentUpload}}
     {{else}}
-      {{#with currentUpload}}
-        Uploading <b>{{file.name}}</b>:
-        <progress value="{{progress.get}}" max="100"></progress>
-        &nbsp;
-        <span class="progress">{{progress.get}}%</span>
+      {{#if uploadTemplate}}
+        {{>Template.dynamic template=uploadTemplate data=currentUpload}}
+      {{else}}
+        {{#with currentUpload}}
+          Uploading <b>{{file.name}}</b>:
+          <progress value="{{progress.get}}" max="100"></progress>
+          &nbsp;
+          <span class="progress">{{progress.get}}%</span>
       {{else}}
         <div class="file-field input-field">
           <div class="btn">
@@ -42,7 +42,7 @@
             <input class="file-path" type="text" placeholder="{{afFieldLabelText name=this.name}}">
           </div>
         </div>
-      {{/with}}
-    {{/if}}
+        {{/with}}
+      {{/if}}
   {{/with}}
 </template>
