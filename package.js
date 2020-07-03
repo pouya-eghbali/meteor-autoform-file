@@ -17,7 +17,7 @@ Package.onUse(function(api) {
     'reactive-var',
     'templating',
     'aldeed:autoform@6.2.0',
-    'ostrio:files@1.9.0',
+    'ostrio:files',
     'dburles:mongo-collection-instances@0.3.5'
   ]);
 
